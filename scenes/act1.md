@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: **这是这个人类的焦虑**
 
-n: _YOU_ ARE THE ANXIETY
+n: ***你*是这个焦虑**
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -24,17 +24,17 @@ n: _YOU_ ARE THE ANXIETY
 
 `hong({mouth:"0_neutral", eyes:"0_neutral"})`
 
-h: Oh hey! We're back here again?
+h: 嘿！咱们咋又在这见面了？
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n:  **你的职责是保护你的人类，让它远离*危险***
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+n:  **事实上，再次游玩这个游戏就是把它们再一次置于*危险*之中**
 
-n: QUICK, WARN THEM!
+n: **快，警告它们！**
 
 ```
 sfx("squeak");
@@ -42,13 +42,13 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The player...
+b: 人类！听着，我们正处于危险之中，这个玩家......
 
-[...is gonna torture us again!](#act1_replay_torture)
+[...正准备再一次折磨我们！](#act1_replay_torture)
 
-[...won't find an alternate ending!](#act1_replay_alternate)
+[...不会找到另一个结局了！](#act1_replay_alternate)
 
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+[...会找到这款游戏隐晦的的叙事失调之处！](#act1_replay_dissonance)
 
 # act1_replay_torture
 
@@ -59,32 +59,32 @@ hong({body:"0_sammich"});
 ```
 
 {{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
+b: 它会让我们蜷成一个球大哭！
 {{/if}}
 
 {{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
+b: 它会让你惊恐发作，让我们砸毁你的手机！
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
+b: 它会*阻止*我们打那个派对主人！
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
+b: 它会逼我们打那个像悲情反派的派对主人！
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
+h: 好吧，至少这次，我们可能不会再从屋顶跳下——
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
+b:  **它们会逼我们从屋顶上跳下去！。**
 {{/if}}
 
 `bb({body:"fear"});`
 
-b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+b:  **所有糟糕的事情都会降临在我们身上，之后我们就会——**
 
 (#act1_replay_end)
 
@@ -96,11 +96,11 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: Sure, the story as a *whole* is the same, but each chapter has two possible endings, plus all the branching dialogue opti--
+h: 确实，这个故事的*基调*是一样的，但是每个章节都有两个可能发生的结局，而且所有的分支对话选择——
 
 `bb({body:"fear"});`
 
-b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
+b: 玩家会失望的。它们会关掉这个页面，删除我们的软件，然后我们就会——
 
 (#act1_replay_end)
 
@@ -112,27 +112,27 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: A lewd-what now?
+h: 淫秽的—什么......?
 
 `bb({eyes:"normal"});`
 
-b: The story arc was about how you can *CHOOSE* to build a healthy collaboration with your fear,
+b: 这整个故事都是在说你能*选择*和你的恐惧建立起良好的合作关系，
 
 `bb({eyes:"normal_right"});`
 
-b: But replaying the game will give the same story, implying your *CHOICES* don't matter,
+b: 但是重新游玩这个游戏也只会给它们呈现一样的故事，不就是说你的*选择*毫无用处吗？
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: Thus showing a contradiction between the game's message and mechanics,
+b: 这就暴露了这个游戏内容和机制的矛盾之处，
 
 `bb({eyes:"fear"});`
 
-b: Thus unraveling the fabric of this narrative universe,
+b: 然后这个叙事宇宙的根基就分崩离析了，
 
 `bb({body:"fear"});`
 
-b: And then we'll--
+b: 然后我们就会——
 
 (#act1_replay_end)
 
@@ -141,7 +141,7 @@ b: And then we'll--
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: **死**死死死死死死——
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -164,13 +164,13 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-h: Okay let's get back into character.
+h:  好吧，我们还是回到角色应有的表现里吧。
 
 ```
 Game.clearText();
 ```
 
-n4: (LET _YOUR_ ANXIETY BLAH BLAH BLAH MOST SIMILAR TO WHAT _YOUR_ FEAR BLAH BLAH YOU KNOW THE DRILL)
+n4:（**让*你*的焦虑和*你*的恐惧瞎bb那些你早就知道的那些话去吧**）
 
 ```
 sfx("squeak");
@@ -186,17 +186,17 @@ bb({body:"squeeze"});
 
 `hong({mouth:"0_neutral", eyes:"0_annoyed"})`
 
-h: Oh good, my wolf's back. Faaaaantastic.
+h: 哈哈，我的狼回来了。真真真真是太好了啊。
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: **你的职责是保护你的人类，让它远离*伤害***
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, THAT SANDWICH IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: **事实上，这个三明治就在把它置于*危险*之中**
 
-n: QUICK, WARN THEM!
+n: **快，警告它！**
 
 ```
 sfx("squeak");
@@ -204,21 +204,21 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The danger is...
+b: 人类！听着，我们正处于危险之中！就是......
 
 `bb({body:"squeeze"})`
 
-n4: (LET _YOUR_ ANXIETY COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEAR TELLS YOU)
+n4: （**让*你*的焦虑出来玩玩！挑个和*你*的恐惧告诉你最相近的内容！**）
 
 (#act1_normal_choice)
 
 # act1_normal_choice
 
-[We're eating alone for lunch! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
+[我们在一个人吃午餐，又一次！](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[We're not productive while eating!](#act1a_productive) `bb({body:"squeeze_talk"})`
+[我们在吃饭的时候啥也没做！](#act1a_productive) `bb({body:"squeeze_talk"})`
 
-[That white bread's bad for us!](#act1a_bread) `bb({body:"squeeze_talk"})`
+[这个白面包对我们的身体不好！](#act1a_bread) `bb({body:"squeeze_talk"})`
 
 # act1a_alone
 
@@ -227,27 +227,27 @@ bb({body:"normal", mouth:"small", eyes:"narrow"});
 hong({body:"0_sammich"});
 ```
 
-b: Don't you know loneliness is associated with premature death as much as smoking 15 cigarettes a day?-
+b: 你难道不知道，孤独带来的早逝风险和每天抽15根香烟一样吗？-  
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
 `bb({mouth:"normal", eyes:"normal_right"})`
 
-b: (Holt-Lunstad 2010, PLoS Medicine)
+b: (霍尔特-伦斯塔德 等，2010年，《公共科学图书馆·医学》)
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, thanks for citing your sources but--
+h: 呃，多谢你指出这句话的根据，但是——
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
 `bb({body:"fear", mouth:"normal", eyes:"fear"})`
 
-b: Which means if we don't hang out with someone *right now* we're gonna-
+b: 这意味着如果你不*立刻*和其它人出去玩的话你将会——
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b:  **死**死死死死死死死——————
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -260,7 +260,7 @@ publish("hp_show");
 
 `_.fifteencigs = true`
 
-n: YOU USED *FEAR OF BEING UNLOVED*
+n:**你使用了*不被爱*的*恐惧***
 
 (#act1b)
 
@@ -271,27 +271,27 @@ bb({body:"normal", mouth:"small", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-b: Whip out your laptop and do some work right now!
+b: 现在立马打开你的笔记本做点啥！
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, I'd rather not get crumbs in my keyboa--
+h: 呃，我更不想把面包屑撒在我的键——
 
 ```
 bb({mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: If we're not contributing to the body of society then we're a society-parasite!
+b: 如果我们不对社会躯体做点贡献我们就成了社会寄生虫！
 
-b: The society-body will go to the society-doctor for medication to kill their society-parasites then we'll--
+b: 社会躯体会去找社会医生开些药杀死那些社会寄生虫然后我们就会——
 
 ```
 bb({body:"panic", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: **死**死死死死死死死——————
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -304,7 +304,7 @@ publish("hp_show");
 
 `_.parasite = true`
 
-n: YOU USED *FEAR OF BEING A BAD PERSON*
+n:  **你使用了*变成一个坏人*的*恐惧***
 
 (#act1b)
 
@@ -315,18 +315,18 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich", eyes:"0_annoyed"});
 ```
 
-h: Have those studies been replicat--
+h: 那些研究难道没有——
 
 ```
 bb({body:"fear", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Processed wheat will spike our blood sugar so they'll have to amputate all our limbs and then we'll-
+b: 加工过的小麦会让我们的血糖激增所以它们会切掉我们的四肢然后我们就会——
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: **死**死死死死死死死——————
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -339,39 +339,39 @@ publish("hp_show");
 
 `_.whitebread = true`
 
-n: YOU USED *FEAR OF BEING HARMED*
+n:  **你使用了*被伤害*的*恐惧***
 
 (#act1b)
 
 # act1b
 
-n: IT'S SUPER EFFECTIVE
+n:  **这简直太有效了！**
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: See, human? I am your loyal guard-wolf!
+b: 看到了吗，人类？！我是你忠实的看家狼！
 
 `bb({body:"pride_talk"});`
 
-b: Trust your gut! Your feelings are always valid!
+b: 相信你的直觉！你的感觉总是可靠的！
 
 `bb({body:"pride"});`
 
-n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+n:  **让你的人类的能量阈值降到零**
 
-n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
+n:  **为了保护它们的生理+社会+道德需求，你可以使用：**
 
-n: FEAR OF *BEING HARMED* #harm#
+n: ***被伤害***的**恐惧** #harm#
 
-n: FEAR OF *BEING UNLOVED* #alone#
+n: ***不被爱***的**恐惧** #alone#
 
-n: AND FEAR OF *BEING A BAD PERSON* #bad#
+n: ***和变成一个坏人***的**恐惧** #bad#
 
 `Game.OVERRIDE_TEXT_SPEED = 1.25;`
 
-n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
+n4:（**专业建议**：**选择那些会刺中你心底最深、最黑暗的恐惧的选项吧！~**）
 
-h: ...
+h: ……
 
 ```
 hong({body:"putaway"});
@@ -383,18 +383,18 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-h: you know what maybe it's time to check my phone.
+h: 呃，或许是时候查看我的手机消息了。
 
 ```
 sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: PROTECT YOUR HUMAN
+n:  **保护你的人类**
 
-n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+n:  **保护它们远离伤害：来自世界的。来自它人的。来自它们自己的。**
 
-n: GOOD LUCK
+n:  **祝你好运**
 
 (...500)
 
@@ -408,38 +408,38 @@ n: GOOD LUCK
 
 `music('battle', {volume:0.5})`
 
-n: ROUND ONE: *FIGHT!*
+n:  **第一轮**：*战斗!*
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"});`
 
-h: Huh. Facebook feed says there's a party happening this weekend.
+h:  唔，脸书动态说这周末有一个派对。
 
 `bb({eyes:"uncertain"});`
 
-b: Doesn't that weirdo throw a party *every* weekend?
+b: 那些怪胎不是*每*周末都会举行派对吗？
 
 `bb({eyes:"uncertain_right"});`
 
-b: What inner void are they trying to fill? They must be deeply messed up inside!
+b: 它们在试图填满内心什么样的空虚？我就说，它们的内心一定是一团糟！
 
 `hong({eyes:"surprise"});`
 
-h: Also, I got an invite?
+h: 而且，我被邀请了？
 
 `bb({eyes:"fear", mouth:"normal"});`
 
-b: Well then!
+b: 那么！
 
-[Say yes, or we'll die from loneliness!](#act1c_loner)
+[答应它，不然我们会因为孤独而死去！](#act1c_loner)
 
-[Say no, it's full of poisonous drugs!](#act1c_drugs)
+[拒绝它，那里充斥着有毒的药物！](#act1c_drugs)
 
-[Ignore it, we just make parties sad.](#act1c_sad)
+[无视它，我们只会让派对变得糟糕。](#act1c_sad)
 
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Fifteen cigarettes a day, human! Fifteen!
+b: 一天十五根香烟，人类！十五根！
 {{/if}}
 
 {{if !_.fifteencigs}}
@@ -447,11 +447,11 @@ b: Fifteen cigarettes a day, human! Fifteen!
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+b: 没有人会出席我们的葬礼，它们会把我们的骨灰扔进大海，然后我们就会被鲸鱼吃掉，
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: and we become WHALE POOP!
+b: 然后我们就会变成**鲸鱼的大便！！！**
 {{/if}}
 
 {{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
@@ -468,25 +468,25 @@ attack("18p", "alone");
 `bb({eyes:"normal"});`
 
 {{if !_.fifteencigs}}
-b: So yeah we should go to that party!
+b: 是的我们应该去那场派对！
 {{/if}}
 
 {{if _.parasite}}
-b: Just bring the laptop so we can do work, and not be a society-parasite.
+b: 只是记得带上笔记本，这样我们就可以工作，不成为社会寄生虫了。
 {{/if}}
 
 {{if _.whitebread}}
-b: Just as long as they don't serve WHITE BREAD
+b: 只要它们不提供**白面包**
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: **天哪**。如果这能让你闭嘴，好吧。
 
-h: I'll say yes.
+h: 我会答应的。
 
 {{if _.whalepoop}}
-b: Whale poop, human! Whale poop!
+b: 鲸鱼的大便，人类！鲸鱼的大便！
 {{/if}}
 
 `_.partyinvite="yes"`
@@ -498,7 +498,7 @@ b: Whale poop, human! Whale poop!
 `bb({mouth:"small", eyes:"fear"});`
 
 {{if _.whitebread}}
-b: or even worse... WHITE BREAD
+b: 或者更坏......**白面包**
 {{/if}}
 
 {{if _.whitebread}}
@@ -506,11 +506,11 @@ b: or even worse... WHITE BREAD
 {{/if}}
 
 {{if _.whitebread}}
-b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+b: 我们会嗑巨多毒品和白面包以至于它们无法把我们肥胖的尸体塞进焚化炉！
 {{/if}}
 
 {{if !_.whitebread}}
-b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+b: 我们会嗑太多药，连殡葬师都会震惊于我们的身体*早已经*进行过防腐工作了！
 {{/if}}
 
 ```
@@ -521,14 +521,14 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.parasite}}
-b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+b: 另外，我们不能去派对，我们得去工作，不然我们就会成为糟糕的社会寄生虫！
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h:  **天哪**，如果这能让你闭嘴，好吧。
 
-h: I'll say no.
+h: 我会拒绝的。
 
 `_.partyinvite="no"`
 
@@ -541,15 +541,15 @@ h: I'll say no.
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.fifteencigs}}
-b: All we ever do is cry in a corner about how loneliness is as deadly as 15 cigarettes a day.
+b:  我们能做的只是在一个角落里大哭，哭孤独和一天吸15根烟的致命程度相同。
 {{/if}}
 
 {{if _.parasite}}
-b: All we ever do at parties is worry about how we should be productive instead.
+b:  我们能在派对做的，就是担忧我们怎么样才能更加有生产力。
 {{/if}}
 
 {{if _.whitebread}}
-b: All we ever do is worry about how the unhealthy food options are going to kill us.
+b: 我们能做的，就是忧虑那些不健康的食物最终会怎样杀死我们。
 {{/if}}
 
 ```
@@ -557,19 +557,19 @@ bb({mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"lookaway"});
 ```
 
-h: gee i wonder why.
+h: 哇哦，那我可真想知道为什么。
 
 `hong({eyes:"neutral"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: So if we go we'll make them feel bad, but if we reject their invite we'll also make them feel bad!
+b: 所以如果我们参加派对，就会让它们难受，但如果拒绝它们的邀请，我们也会让它们难受！
 
 `bb({body:"fear", eyes:"fear"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD
+b:  **我们能做的只是让别人难受，所以我们也应该感到难受**
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -580,9 +580,9 @@ attack("18p", "bad");
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: Ugh. If it'll make you shut up, fine.
+h: 唉，如果这能让你闭嘴，好吧。
 
-h: I'll ignore the invite.
+h: 我会无视那个邀请。
 
 `_.partyinvite="ignore"`
 
@@ -595,19 +595,19 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"annoyed"});
 ```
 
-h: Anyway. Facebook's too much. I need something calmer, less anxiety-producing.
+h: 算了，脸书太多消息了，我需要些更清净，不会让人焦虑的东西。     
 
 `hong({eyes:"neutral"});`
 
-h: What's new on Twitter?
+h: 推特上有什么新鲜事吗？
 
 `bb({eyes:"look"});`
 
-[Oh no, look at that horrible news story!](#act1d_news)
+[哦不，看那个糟糕的新闻！](#act1d_news)
 
-[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+[哦不，那是暗地里阴阳*我们*的推文吗？](#act1d_subtweet)
 
-[Hey, a GIF of a cat drinking milk](#act1d_milk)
+[嘿，一个猫猫喝牛奶的动图。](#act1d_milk)
 
 
 # act1d_news
@@ -617,25 +617,25 @@ bb({eyes:"pained1"});
 music(null, {fade:2});
 ```
 
-b: God, it feels like the world's burning, isn't it?
+b: 天哪，这感觉就像是整个世界在燃烧，不是吗？
 
 ```
 bb({eyes:"pained2"});
 hong({mouth:"sad", eyes:"sad"});
 ```
 
-b: It feels like it's all ending, like everything's dying and we're doomed and there's nothing we can do about it.
+b: 感觉一切都已经注定了，所有事情都在死去，我们也会完蛋，我们还无能为力。
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 0.5;
 bb({mouth:"shut"});
 ```
 
-b: ...
+b: ……
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: Let's retweet that story!
+b: 让我们转发这个推文吧！
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -653,11 +653,11 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Okay I'll retweet it just please be quiet!
+h: 好的我会转发它的，只是求求你安静点！
 
 `hong({mouth:"neutral", eyes:"annoyed"});`
 
-h: Screw it, let's look at Snapchat.
+h: 去你的，还不如看看snapchat。
 
 (#act1e)
 
@@ -666,42 +666,42 @@ h: Screw it, let's look at Snapchat.
 
 `bb({eyes:"fear"});`
 
-b: It's a subtweet! A sneaky, sneaky subtweet!
+b: 这是一个阴阳人的推特！一个悄咪咪指责别人的推特！
 
 `hong({eyes:"annoyed"});`
 
-h: It's probably not?
+h: 或许它不是呢？
 
 `bb({eyes:"narrow", mouth:"small"});`
 
-b: but what if they're all talking behind our back
+b: 但是如果它们在背后说我们坏话怎么办？
 
-h: They're n--
+h: 它们没——
 
 `bb({body:"fear", eyes:"fear", mouth:"normal"});`
 
-b: IN FRONT OF OUR BACK
+b: **在我们不知道的地方**
 
 `hong({eyes:"sad", mouth:"sad"});`
 
-h: I d--
+h: 我——
 
 `bb({eyes:"narrow", mouth:"small"});`
 
-b: but *what if*
+b: 但是*万一*
 
-h: S--
+h: 闭——
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: *what if*
+b: *万一*
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 0.5;
 hong({mouth:"shut"});
 ```
 
-h: ...
+h: ……
 
 (...1000)
 
@@ -719,7 +719,7 @@ hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h:  呃，好，我还是看看snapchat吧。
 
 (#act1e)
 
@@ -727,7 +727,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"smile", eyes:"neutral"});`
 
-h: Heh ya that's cute, just retweeted it, I thi--
+h: 嘿，这真可爱，我想转发它，我觉得——
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -735,7 +735,7 @@ bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.8;
 ```
 
-b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
+b: **猫不能消化牛奶所以我们是糟糕的从虐待动物里获取快感的人！！！**
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"fear"});
@@ -752,7 +752,7 @@ hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h: 呃，好，我还是看看snapchat吧。
 
 (#act1e)
 
@@ -760,7 +760,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"neutral", eyes:"neutral"});`
 
-h: Huh, photos from yesterday night. So *that's* what those weekly parties are like.
+h: 啊哈，昨晚的照片。所以*那*就是周末派对的样子。
 
 {{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
 
@@ -772,29 +772,29 @@ h: Huh, photos from yesterday night. So *that's* what those weekly parties are l
 
 `hong({mouth:"sad", eyes:"annoyed"});`
 
-h: Oof, looks way too crowded for my anxiety.
+h:  噢，看上去人好多，或许对我现在的焦虑状态来说不怎么友好。
 
-h: Maybe I shouldn't have said yes to the invite?
+h: 或许我一开始不应该答应那个邀请？
 
 ```
 hong({mouth:"neutral", eyes:"neutral"});
 bb({mouth:"normal", eyes:"normal"});
 ```
 
-[Change our answer? Like a jerk?!](#act1e_yes_dontchange)
+[改变我们的答复？像个傻瓜一样？](#act1e_yes_dontchange)
 
-[Change our answer! It's too crowded!](#act1e_yes_changetono)
+[改变我们的答复！那里人太多了！](#act1e_yes_changetono)
 
 {{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+[是的，它们一定会私下里说我们的小话。](#act1e_ignore_subtweet)
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[等等，我们在转发那个推文前没有确认真相啊。](#act1e_ignore_factcheck)
 {{/if}}
 
 {{if (!_.subtweet && !_.badnews)}}
-[You know, you've got really bad posture?](#act1e_ignore_posture)
+[你知道的，你已经选择了一个糟糕的态度去回应那个邀请。](#act1e_ignore_posture)
 {{/if}}
 
 # act1e_yes_dontchange
@@ -804,14 +804,15 @@ bb({eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: They were counting on us to come and now we're betraying their trust? Do you wanna die alone?!
+b: 它相信我们会去的，但是你现在要背弃它的信任？难道你想一个人孤零零死去吗？
 
 {{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+b: **十五支，香烟。**
 {{/if}}
 
 {{if _.whalepoop}}
-b: WHALE. POOP.
+b: **鲸鱼的，大便。**
+
 {{/if}}
 
 ```
@@ -826,7 +827,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll keep it as yes!
+h:  闭上你的臭嘴吧，我会去的！
 
 (#act1f)
 
@@ -837,7 +838,7 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Don't you know about human stampedes?
+b: 难道你没听说过那次踩踏事故吗？
 
 ```
 bb({body:"fear", mouth:"small", eyes:"narrow"});
@@ -845,7 +846,7 @@ hong({eyes:"sad", mouth:"sad"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: In 2003 a Rhode Island nightclub had a fire and the panic made people jam the exits so 100 people burned to death-
+b: 2003年，罗德西亚岛的一家夜店着了火，结果惊慌使人们堵在紧急出口，最后活生生烧死了一百多人——
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"fear"});
@@ -853,14 +854,14 @@ hong({mouth:"shock"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: DO YOU WANT THAT TO HAPPEN TO US-
+b: **你也想让那种事发生在我们身上吗**
 
 ```
 bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 2.5;
 ```
 
-b: SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY N-
+b:  **拒绝它拒绝它拒绝它拒绝它拒绝它拒绝它拒**
 
 
 ```
@@ -876,7 +877,7 @@ hong({eyes:"anger", mouth:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll change my answer to no! God!
+h: 闭上你的臭嘴吧，我会改变我的答复！天哪！
 
 (#act1f)
 
@@ -884,35 +885,35 @@ h: Shut up shut up I'll change my answer to no! God!
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: 唔，看上去好好玩。
 
-h: Maybe I shouldn't have said no to the invite?
+h: 或许我不该拒绝那个邀约？
 
 `bb({mouth:"normal", eyes:"normal"});`
 
-[Change our answer? Like a jerk?!](#act1e_no_dontchange)
+[改变我们的答复？像个傻瓜一样？！](#act1e_no_dontchange)
 
-[Change our answer! Don't die alone!](#act1e_no_changetoyes)
+[改变我们的答复！可别一个人孤零零死掉！](#act1e_no_changetoyes)
 
 {{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+[是的，它们绝对在私下里说我们的小话。](#act1e_ignore_subtweet)   
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[等等，我们在转发那条推文前没有确认真相啊。](#act1e_ignore_factcheck)
 {{/if}}
 
 {{if (!_.subtweet && !_.badnews)}}
-[You know, you've got really bad posture?](#act1e_ignore_posture)
+[你知道的，你已经选择了一个糟糕的态度去回应那个邀请。](#act1e_ignore_posture)
 {{/if}}
 
 # act1e_no_dontchange
 
 `bb({eyes:"anger"})`
 
-b: Everybody was counting on us!
+b: 所有人都在指望我们！
 
-b: ...to leave them alone and let them have a nice party without a horrible disgusting {{if _.whitebread}}white-bread-munching{{/if}} creep like u--
+b: ...让它自己呆着，并且让它那愉快的派对远离一个糟糕的、令人厌恶的 {{if _.whitebread}}大声咀嚼着白面包的{{/if}} 像你一样的怪胎......
 
 
 ```
@@ -928,7 +929,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll keep it as no!
+h: 闭上你的臭嘴吧，我不会去的！
 
 (#act1f)
 
@@ -939,7 +940,7 @@ bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Chronic loneliness increases our cortisol levels as well as risk for cardiovascular disease and stroke!
+b: 长期的孤独会增加我们的皮质醇水平、接着就会增加得心血管疾病和中风的风险！
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -949,7 +950,7 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+b: **十五支、香烟。**
 {{/if}}
 
 ```
@@ -958,7 +959,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll change my answer to yes! God!
+h: 闭上你的臭嘴吧，我会改变我的答复！我会去的！天哪！
 
 (#act1f)
 
@@ -969,14 +970,14 @@ bb({eyes:"fear", mouth:"small"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: All our problematic tweets have come back to roost!
+b: 我们发过的那些黑历史果然找上头来了！
 
 ```
 bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.7;
 ```
 
-b: We're gonna get called out and cancelled and dragged with a rope on horseback down the information superhighway!
+b: 我们会被骂、被抵制，还会被绑上绳子，被马在信息的高速公路上拖行！
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -991,7 +992,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Why are you like this?!
+h: 你为什么要这样子？！
 
 (#act1f)
 
@@ -1002,14 +1003,14 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're spreading disinformation! We're destroying trust in a free press!
+b: 我们在传播不实信息！我们正在摧毁人们对新闻自由的信任！
 
 ```
 bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're the reason fascism will arise from the rubble of democracy!
+b:  我们就是法西斯主义从民主主义的废墟中发展起来的元凶！ 
 
 ```
 bb({body:"normal", eyes:"anger"});
@@ -1025,7 +1026,7 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 _.factcheck = true;
 ```
 
-h: Why are you like this?!
+h: 你为什么要这样子？！
 
 (#act1f)
 
@@ -1036,13 +1037,13 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Do you want to have a pretzel for a spine?! Stop hunching over your screen!
+b:你想拿蝴蝶酥当脊椎吗？！别驼着背看手机了！
 
 ```
 bb({body:"meta"});
 ```
 
-b: That means you too.
+b: 你不也一样。
 
 ```
 bb({body:"normal", mouth:"normal"});
@@ -1058,7 +1059,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Why are you like this?!
+h: 你为什么要这样子？！
 
 (#act1f)
 
@@ -1066,27 +1067,27 @@ h: Why are you like this?!
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: 唔，看上去挺好玩的。
 
-h: Maybe I shouldn't have ignored the invite?
+h: 或许我不该忽视那个邀请？
 
 `bb({mouth:"normal", eyes:"normal"});`
 
-[Keep ignoring, we're still party poopers.](#act1e_ignore_continue)
+[还是忽视吧。我们是扫兴鬼。](#act1e_ignore_continue)
 
-[Actually, say yes.](#act1e_ignore_changetoyes)
+[事实上，你应该答应它们。](#act1e_ignore_changetoyes)
 
-[Actually, say no.](#act1e_ignore_changetono)
+[事实上，你应该拒绝它们。](#act1e_ignore_changetono)
 
 # act1e_ignore_continue
 
 `hong({eyes:"annoyed"});`
 
-h: It's kinda rude to keep ignoring them though, no?
+h: 一直忽视下去或许有点粗鲁，不是吗？
 
 `bb({eyes:"normal_right"});`
 
-b: Well other people always ignore *us*, so
+b: 可是其它人一直都忽视*我们*，所以
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1097,7 +1098,7 @@ attack("18p", "alone");
 
 `bb({eyes:"normal"});`
 
-b: so let's just call it even.
+b: 所以就这样吧。
 
 (#act1f)
 
@@ -1105,9 +1106,9 @@ b: so let's just call it even.
 
 `hong({eyes:"surprise", mouth:"smile"});`
 
-h: You're... letting me have fun?
+h: 你......让我去开心一下？
 
-b: Well, I mean, loneliness *can* kill us.
+b: 好吧，毕竟孤独可是*能*杀了我们的。
 
 `hong({eyes:"neutral", mouth:"neutral"});`
 
@@ -1117,7 +1118,7 @@ b: Well, I mean, loneliness *can* kill us.
 
 `bb({eyes:"narrow"});`
 
-b: It's too crowded. Crowds are dangerous.
+b: 人太多了，人群是危险的。
 
 (#act1e_yes_changetono)
 
@@ -1129,60 +1130,60 @@ hong({mouth:"neutral", eyes:"neutral"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: Whatever. New Tinder notification.
+h: 无论如何，新的tinder消息来了。
 
 `bb({eyes:"uncertain"})`
 
-b: What, that hookup app?
+b: 什么？那个聊骚软件？
 
 `hong({eyes:"annoyed"})`
 
-h: It's not a hookup app, it's just a way to meet new peopl--
+h: 那不是什么聊骚软件，只不过是一种认识新朋友的——
 
 `bb({eyes:"narrow"})`
 
-b: It's a hookup app.
+b: 这就是聊骚软件。
 
 ```
 hong({eyes:"surprise", mouth:"smile"});
 bb({eyes:"normal"});
 ```
 
-h: Oh, I got a match! They look cute!
+h: 哇，配对成功了！它看起来很可爱！
 
 ```
 bb({eyes:"narrow_eyebrow"});
 hong({eyes:"sad", mouth:"anger"})
 ```
 
-h: Please don't ruin this for m--
+h: 拜托不要再给我毁了这——
 
 ```
 bb({body:"panic"});
 Game.OVERRIDE_TEXT_SPEED = 2.0;
 ```
 
-b: DANGER DANGER DANGER DANGER DANGER DANGER
+b: **危险危险危险危险危险危险——**
 
 `bb({body:"fear", eyes:"fear", mouth:"normal"})`
 
-[We're being *used* by other people.](#act1f_used_by_others)
+[我们在被它人*使用*。](#act1f_used_by_others)
 
-[We're just *using* other people.](#act1f_using_others)
+[我们只是在*使用*其它人](#act1f_using_others)
 
-[YOUR MATCH IS A SERIAL KILLER](#act1f_killer)
+[**你的匹配对象是个连环杀手**](#act1f_killer)
 
 # act1f_used_by_others
 
 `bb({body:"point_crotch", eyes:"normal", mouth:"normal"})`
 
-b: Random hookups may be able to fill the hole down there,
+b: 随机聊骚或许能填补这里的洞，
 
-b: but they can never fill the hole...
+b: 但是它们永远也不能填满，
 
 `bb({body:"point_heart", eyes:"pretty", mouth:"small"})`
 
-b: in *here*.
+b: *这里*的洞
 
 (...1000)
 
@@ -1191,7 +1192,7 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: The point is WE'RE GOING TO DIE ALONE
+b: 重点是，**我们会孤独地死去**
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1208,7 +1209,7 @@ attack("18p", "alone");
 
 `bb({eyes:"narrow", mouth:"small"})`
 
-b: You think other people's genitals are Pokémon for us to collect?
+b: 你把别人的生殖器当宝可梦来收集吗？
 
 ```
 bb({body:"sing", eyes:"pretty", mouth:"shut"});
@@ -1222,7 +1223,7 @@ Game.FORCE_TEXT_DURATION = 1000;
 Game.FORCE_NO_VOICE = true;
 ```
 
-b: ♫ (pokemon theme song)-
+b: ♫ (宝可梦主题曲)-
 
 (...5600)
 
@@ -1231,7 +1232,7 @@ bb({mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2400;
 ```
 
-b: ♫ I wanna be, the ^slut^ti-est-
+b: ♫ 我想成为最 ^放荡的^-
 
 (...500)
 
@@ -1240,7 +1241,7 @@ bb({eyes:"narrow", mouth:"small"});
 Game.FORCE_TEXT_DURATION = 2100;
 ```
 
-b: ♫ Like no one ever was-
+b: ♫ 就像从未有人-
 
 (...1500)
 
@@ -1249,7 +1250,7 @@ bb({eyes:"pretty"});
 Game.FORCE_TEXT_DURATION = 2300;
 ```
 
-b: ♫ Thighs n' ^ass^, voluptuous breast-
+b: ♫ 大腿和 ' ^翘臀^, 性感的丰胸-
 
 (...500)
 
@@ -1258,7 +1259,7 @@ bb({eyes:"fear", mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2000;
 ```
 
-b: ♫ with sweaty ^dick^ and balls!-
+b: ♫ 和亲爱的^阴茎^ 还有摇摇球-
 
 (...1000)
 
@@ -1267,7 +1268,7 @@ bb({eyes:"smile", mouth:"smile"});
 Game.FORCE_TEXT_DURATION = 1000;
 ```
 
-b: ♫ PERVY-MON! GOTTA CA-
+b: ♫ **变态宝可梦！抓到一个就-**
 
 ```
 Game.FORCE_CANT_SKIP = false;
@@ -1277,7 +1278,7 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: The point is we're a manipulative creep.
+b: 重点是，我们是操纵别人的变态。
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1295,19 +1296,19 @@ attack("18p", "bad");
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.whitebread}}
-b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
+b: 它们会把你困在井里，强制喂白面包给你，直到你胖的能够让它们剥下你的皮当大衣穿！
 {{/if}}
 
 {{if _.parasite}}
-b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
+b: 它们会用番茄钟威胁你说： "**你个寄生虫早该多干点正事了**"
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
+b:  它们会把你的血肉撕成五彩纸屑，把你的肠子扯成彩带，再把你的鲜血混进派对饮料里！
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: How's THAT for a party invite?!
+b: 这个邀请够**带劲**了吧？！
 {{/if}}
 
 ```
@@ -1330,11 +1331,11 @@ Game.OVERRIDE_TEXT_SPEED = 0.5;
 music(false);
 ```
 
-h: ...
+h: ……
 
 (...500)
 
-h: i'm so sick of this game.
+h: 我厌倦了这个游戏。
 
 (...700)
 
@@ -1351,27 +1352,27 @@ h:
 {{if _.catmilk}}"cats can't digest milk"... {{/if}}
 {{if _.pokemon}}a ^crappy^ parody song... {{/if}}
 
-h: i just want to live my life.
+h: 我只是想好好过我的生活。
 
-h: i just want to be free from all this... pain.
+h: 我只是想远离所有这些......痛苦。
 
 `bb({eyes:"look_sad"});`
 
-b: Hey... human...
+b: 嘿......人类......
 
 `Game.OVERRIDE_TEXT_SPEED = 0.5;`
 
-b: It'll be okay.
+b: 会好起来的。
 
 (...600)
 
 `bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
 
-b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+b: 作为你忠实的看家狼，我会永远关注着潜在的危险，尽我所能保护你的安全。
 
 `bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
 
-b: I promise.
+b: 我保证。
 
 (...600)
 
@@ -1380,29 +1381,29 @@ bb({body:"normal", eyes:"normal", mouth:"normal"});
 hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
 ```
 
-h: Last app. Instagram. What you got?
+h: 最后一个软件，instagram。你看到了什么？
 
 `hong({eyes:"sad"});`
 
-h: It's... more party pictures.
+h: 是......更多的派对照片，
 
 `hong({mouth:"sad"});`
 
-h: Everyone looks so happy. Free from worry. Free from anxiety.
+h: 所有人看起来都很开心。毫无担忧。毫无焦虑。
 
 `hong({mouth:"anger"});`
 
-h: God, why can't I be like them? Why can't I just be *normal?*
+h: 老天奶，为什么我不能像它们一样？为什么我连*正常*都做不到？
 
 `bb({eyes:"normal_right"});`
 
-b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+b: 说到这周末的派对邀请。这是我的**最终**选择：
 
 `bb({eyes:"normal"});`
 
-[We should go.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
+[我们应该去。](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[We should not go.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+[我们不应该去。](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1g_go
 
@@ -1418,39 +1419,39 @@ b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
 
 # act1h
 
-b: We sh--
+b: 我们——
 
 ```
 bb({eyes:"wat", mouth:"small"});
 hong({body:"2_fuck"});
 ```
 
-h: *^FUCK^.*
+h: *^ *操* ^.*
 
 `hong({body:"2_you"});`
 
-h: YOU.
+h: **你**。
 
 (...500)
 
-b: w
+b: 什
 
 (...1500)
 
 `bb({eyes:"wat_2"});`
 
-b: wha?
+b: 什么？
 
 `hong({body:"phone1", eyes:"anger", mouth:"anger"});`
 
-h: I'm going to say YES to that party,
+h: 我**会**去这场派对。
 
 {{if _.act1g=="go"}}
-h: NOT because you want me to, but because *I* want to.
+h: **不是**因为你想让我去，而是因为*我*想去。
 {{/if}}
 
 {{if _.act1g=="dont"}}
-h: Precisely BECAUSE you don't want me to.
+h: 准确来讲，是**因为**你不想让我去。
 {{/if}}
 
 ```
@@ -1458,14 +1459,14 @@ hong({body:"putaway"});
 sfx("rustle");
 ```
 
-h: You're NOT in control of me.
+h: 你**无法**掌控我。
 
 ```
 sfx("rustle2");
 hong({body:"0_sammich", eyes:"0_annoyed", mouth:"0_neutral"});
 ```
 
-h: Now excuse me while I eat this delicious sandwich in ^goddamn^ peace.
+h: 现在请你让我在这^该死的^平静中吃完这个美味的三明治。
 
 `hong({body:"2_sammich_eat"});`
 
@@ -1483,14 +1484,14 @@ bb({body:"normal", eyes:"uncertain", mouth:"shut"});
 Game.OVERRIDE_TEXT_SPEED = 0.5;
 ```
 
-b: ...
+b: ……
 
 ```
 bb({eyes:"normal_right"});
 Game.OVERRIDE_TEXT_SPEED = 1;
 ```
 
-b: ...
+b: ……
 
 ```
 bb({eyes:"fear"});
@@ -1503,11 +1504,11 @@ b: ..................
 
 `bb({mouth:"normal"});`
 
-[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+[**啊啊啊啊我们会死掉的！！**](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+[**啊啊啊啊所有人都讨厌我们！！**](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+[**啊啊啊啊我们真是烂透了！！**](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
 
 # act1h_death
 
@@ -1516,7 +1517,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+b: **啊啊啊我们会死掉的啊啊啊啊啊啊啊！！**
 
 ```
 hong({body:"3_defeated1"});
@@ -1534,7 +1535,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+b: **啊啊啊所有人都讨厌我们啊啊啊啊啊啊啊！！**
 
 ```
 hong({body:"3_defeated1"});
@@ -1552,7 +1553,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+b:  **啊啊啊我们烂透了啊啊啊啊啊啊啊！！**
 
 ```
 hong({body:"3_defeated1"});
@@ -1570,39 +1571,39 @@ bb({mouth:"smile_lock", eyes:"smile", body:"normal"});
 music('battle', {volume:0.5});
 ```
 
-n: CONGRATULATIONS
+n: **恭喜你**
 
 (...500)
 
-n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+n:  **你成功地捍卫了你的人类的生理+社会+道德需求！**
 
-n: WHY, LOOK HOW GRATEFUL THEY ARE!
+n:  **为什么不是？看看它们多感激啊！**
 
 (...500)
 
-n: NOW THAT THEIR ENERGY IS ZERO, YOU CAN DIRECTLY CONTROL THEIR ACTIONS
+n: **既然它们的能量已经归零了，你可以直接控制它们的行动了！**
 
 `bb({mouth:"smile", eyes:"normal"});`
 
-n: PICK YOUR ENDING MOVE
+n: **请选择你的结局杀招吧！**
 
 `bb({mouth:"small_lock", eyes:"fear"});`
 
-n: *FINISH THEM*
+n: ***了结它们***
 
-[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+[{**战斗**: 给你的那台让人充满焦虑的手机些惩罚！}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+[{**战斗**: 蜷成一个球大哭吧！}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1i_phone
 
 `bb({mouth:"normal", eyes:"narrow"})`
 
-b: Your phone was giving you a panic attack!
+b: 你的手机一直在恐吓你！
 
 `bb({eyes:"anger"})`
 
-b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+b: Zuckerberg这群人正绑架你的精神健康，给那帮资本家们投钱呢！
 
 ```
 bb({body:"fear", eyes:"fear"});
@@ -1610,7 +1611,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Punish your phone! Destroy it! Kill it!
+b: 惩罚你的手机！砸了它！杀了它！
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1619,7 +1620,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "fight";
 ```
 
-b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL I--
+b: **杀了它杀了它杀了它杀了它杀了它杀了它杀了它杀了它杀了它杀了它杀了它**——
 
 (#act1j)
 
@@ -1627,7 +1628,7 @@ b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL 
 
 `bb({eyes:"fear", mouth:"normal"})`
 
-b: The whole world is filled with danger!
+b: 整个世界都充斥着危险！
 
 ```
 bb({body:"fear"});
@@ -1635,7 +1636,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Do like the armadillo! Curl up into a ball for self-defense!
+b: 像犰狳一样！蜷成一个球，保护自己！
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1644,7 +1645,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "flight";
 ```
 
-b: CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CR-- 
+b: **蜷起来大哭吧蜷起来大哭吧蜷起来大哭吧蜷起来大哭吧蜷起来大哭吧蜷起来大哭——**
 
 (#act1j)
 
